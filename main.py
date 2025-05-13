@@ -12,7 +12,7 @@ context = st.text_area("Bullet Points", height=200, placeholder="- Reschedule th
 tone = st.selectbox("Choose a tone", ["Professional", "Friendly", "Persuasive", "Apologetic"])
 
 if st.button("Generate Email") and context.strip():
-    with st.spinner("🧠 Thinking... Generating your email..."):
+    with st.spinner("Thinking... Generating your email..."):
         prompt = f"""
         You are a professional assistant. Based on the following bullet points, write a complete, well-structured, and natural-sounding {tone.lower()} email.
 
@@ -32,4 +32,4 @@ if st.button("Generate Email") and context.strip():
             st.markdown(f"<div style='white-space: pre-wrap; font-size: 1.1em;'>{generated_email}</div>", unsafe_allow_html=True)
 
         except Exception as e:
-            st.error(f"⚠️ An error occurred: {str(e)}")
+            st.error(f"An error occurred: {str(e)}")
