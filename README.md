@@ -1,4 +1,4 @@
-# email-generator
+# Email Generator
 A simple, privacy-friendly AI tool that turns bullet points into complete, natural-sounding emails — powered entirely by a **local LLM (Mistral)** using **Ollama**.
 Built with **Python** and **Streamlit**, no OpenAI API or internet connection is required.
 
